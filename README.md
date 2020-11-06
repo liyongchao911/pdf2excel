@@ -36,13 +36,18 @@ activities based on Pandas Dataframe API
   - Current code can only parse all the item in the pdf report, one more step need to add a function that make the customer input the item they inserset
   - Add a interface to relize the above function
   - Package this functioin to exe, then it can run without the development environment
+  
+### 5. Development platform:
+  - 1. windows 10
+  - 2. Anaconda + Jupyter notebook
+  - 3. Python 3.8.3
 -----------------------------------------------------------------
 
 本项目涉及到工业生产中，批量从pdf测量报告中提取需要信息的一般化操作
 ## 批量提取pdf测量报告中测量值，并统计整理/写入excel/csv文件
 ### 0. 该项目涉及两个问题点:
  1. 使用pdfplumber、pandas库从pdf格式的测量报告中提取需要的测量值，可以加入可视化功能
- 2. 批量处理。加入测量报告有1000份，需要加入批量处理功能
+ 2. 多份文档的批量处理功能。可以一次性批量处理多份同类型的报告，经测试1000报告可以在5分钟之类处理完毕
 
 ### 1. 本项目可以完成从pdf测量报告中提取需要信息的功能.
 
@@ -74,3 +79,8 @@ activities based on Pandas Dataframe API
  - 1. 暂时只可以实现从测量报告解析处全部测量要素，不符合客户导向
  - 2. 增加一个客户输入截面，客户输入想要提取的测量测量，之后程序自动解析出感兴趣的部分
  - 3. 暂时程序只可以在开发环境中运行，需要打包成exe文件，脱离开发环境运行
+ 
+### 5. 代码测试平台:
+  - 1. windows 10
+  - 2. Anaconda + Jupyter notebook
+  - 3. Python 3.8.3
